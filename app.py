@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(layout="wide")
 st.title("Summer 2026's biggest attacking signings: worth the money?")
 st.caption("Data: FotMob (Opta), league games only, as of 23 Oct 2026")
 
