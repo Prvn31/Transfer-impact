@@ -4,7 +4,6 @@ import pandas as pd
 st.title("Summer 2026's biggest attacking signings: worth the money?")
 st.caption("Data: FotMob (Opta), league games only, as of 23 Oct 2026")
 
-import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('transfers.csv')
