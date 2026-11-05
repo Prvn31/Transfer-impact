@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from profiles import profiles
 
 st.set_page_config(layout="wide")
 st.title("Summer 2026's biggest attacking signings: worth the money?")
@@ -78,3 +79,10 @@ plt.ylabel('Expected goals + assists per 90')
 plt.legend(['Last season', 'This season'])
 st.pyplot(plt.gcf())
 plt.close()
+
+
+st.subheader("Player profiles")
+
+for name, verdict in zip(by_output['name'], by_output['verdict']):
+    with st.expander(f"{name}: {verdict}"):
+        st.markdown(profiles[name])
