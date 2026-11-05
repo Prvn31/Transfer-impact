@@ -42,10 +42,10 @@ by_output[['name', 'fee_m', 'xgc_per_90', 'cost_per_xgc90', 'xgc_change_pct', 'v
 
 table = by_output[['name', 'fee_m', 'xgc_per_90', 'cost_per_xgc90', 'xgc_change_pct', 'verdict']].rename(columns={
     'name': 'Player',
-    'fee_m': '_____',
-    'xgc_per_90': '_____',
-    'cost_per_xgc90': '_____',
-    'xgc_change_pct': '_____',
+    'fee_m': 'Fee (€m)',
+    'xgc_per_90': 'Expected G+A per 90',
+    'cost_per_xgc90': '€m per unit of output',
+    'xgc_change_pct': 'Change vs last season (%)',
     'verdict': 'Verdict'
 })
 
