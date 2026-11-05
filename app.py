@@ -41,4 +41,13 @@ by_output.index = by_output.index + 1
 
 by_output[['name', 'fee_m', 'xgc_per_90', 'cost_per_xgc90', 'xgc_change_pct', 'verdict']].round(2)
 
-st.dataframe(by_output[['name', 'fee_m', 'xgc_per_90', 'cost_per_xgc90', 'xgc_change_pct', 'verdict']].round(2))
+table = by_output[['name', 'fee_m', 'xgc_per_90', 'cost_per_xgc90', 'xgc_change_pct', 'verdict']].rename(columns={
+    'name': 'Player',
+    'fee_m': '_____',
+    'xgc_per_90': '_____',
+    'cost_per_xgc90': '_____',
+    'xgc_change_pct': '_____',
+    'verdict': 'Verdict'
+})
+
+st.dataframe(table.round(2))
